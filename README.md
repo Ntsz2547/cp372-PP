@@ -18,7 +18,7 @@ We use Python for data processing and Tableau for interactive data visualization
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - Python (pandas, numpy, matplotlib, seaborn, scikit-learn)
 - Jupyter Notebook
@@ -27,7 +27,7 @@ We use Python for data processing and Tableau for interactive data visualization
 
 ---
 
-## 🧹 Data Preparation
+##  Data Preparation
 
 ### 1. Data Cleaning
 
