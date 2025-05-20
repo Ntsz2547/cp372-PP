@@ -353,11 +353,6 @@ plt.show()
 --- 
 
 ## Conclusion 
-Here’s a conclusion you can add to your **README.md** file:
-
----
-
-## Conclusion
 
 This project analyzed the "Bank Target Marketing" dataset to uncover insights into customer behavior and campaign effectiveness. The key findings are:
 
