@@ -1,0 +1,2101 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SymmetricLogAxis />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='CP372_Final_Project_118' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' inline='true' name='federated.0diev1n170giwa1abdp820l8gjad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bank_Target_Marketing_Dataset_feature_engineered' name='textscan.10525nc005h09a14128ed0u1a34c'>
+            <connection class='textscan' directory='C:/Users/WIN10/Downloads' filename='Bank_Target_Marketing_Dataset_feature_engineered.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10525nc005h09a14128ed0u1a34c' name='Bank_Target_Marketing_Dataset_feature_engineered.csv' table='[Bank_Target_Marketing_Dataset_feature_engineered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='job' ordinal='1' />
+            <column datatype='string' name='marital' ordinal='2' />
+            <column datatype='string' name='education' ordinal='3' />
+            <column datatype='string' name='default' ordinal='4' />
+            <column datatype='integer' name='balance' ordinal='5' />
+            <column datatype='string' name='housing' ordinal='6' />
+            <column datatype='string' name='loan' ordinal='7' />
+            <column datatype='string' name='contact' ordinal='8' />
+            <column datatype='integer' name='day' ordinal='9' />
+            <column datatype='string' name='month' ordinal='10' />
+            <column datatype='integer' name='duration' ordinal='11' />
+            <column datatype='integer' name='campaign' ordinal='12' />
+            <column datatype='integer' name='pdays' ordinal='13' />
+            <column datatype='integer' name='previous' ordinal='14' />
+            <column datatype='string' name='poutcome' ordinal='15' />
+            <column datatype='string' name='deposit' ordinal='16' />
+            <column datatype='string' name='balance_category' ordinal='17' />
+            <column datatype='string' name='age_group' ordinal='18' />
+            <column datatype='boolean' name='contact_known' ordinal='19' />
+            <column datatype='integer' name='month_num' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>job</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>marital</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[default]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>default</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>housing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[housing]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>housing</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loan]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>loan</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>contact</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaign]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>campaign</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdays</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pdays]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>pdays</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>previous</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poutcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[poutcome]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>poutcome</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deposit]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>deposit</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[balance_category]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>balance_category</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact_known</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[contact_known]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>contact_known</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_num]</local-name>
+            <parent-name>[Bank_Target_Marketing_Dataset_feature_engineered.csv]</parent-name>
+            <remote-alias>month_num</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+      </column>
+      <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='3' formula='[balance]' peg='0' size='1000' />
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([deposit]) / TOTAL(COUNT([deposit]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='response_rate ' datatype='real' name='[Calculation_1987494821857988608]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [deposit]=&quot;yes&quot; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+      </column>
+      <column caption='balance_capped' datatype='integer' name='[Calculation_1987494821862244354]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [balance] &gt; 50000 THEN 50000&#13;&#10;ELSEIF [balance] &lt; 0 THEN 0&#13;&#10;ELSE [balance]&#13;&#10;END' />
+      </column>
+      <column caption='Median Balance ' datatype='real' name='[Calculation_1987494821863632899]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MEDIAN([balance])' />
+      </column>
+      <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='conversion_rate' datatype='real' name='[Calculation_662592106816413705]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+      </column>
+      <column caption='Bank_Target_Marketing_Dataset_feature_engineered.csv' datatype='table' name='[__tableau_internal_object_id__].[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+      <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+      <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+      <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+      <column caption='Contact Known' datatype='boolean' name='[contact_known]' role='dimension' type='nominal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Default' datatype='string' name='[default]' role='dimension' type='nominal' />
+      <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='integer' name='[duration]' role='measure' type='quantitative' />
+      <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+      <column caption='Housing' datatype='string' name='[housing]' role='dimension' type='nominal' />
+      <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+      <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+      <column caption='Marital' datatype='string' name='[marital]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Month Num' datatype='integer' name='[month_num]' role='dimension' type='quantitative' />
+      <column caption='Pdays' datatype='integer' name='[pdays]' role='measure' type='quantitative' />
+      <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+      <column caption='Previous' datatype='integer' name='[previous]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[balance]' derivation='None' name='[none:balance:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[campaign]' derivation='None' name='[none:campaign:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[day]' derivation='None' name='[none:day:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[deposit]' derivation='None' name='[none:deposit:nk]' pivot='key' type='nominal' />
+      <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+      <column-instance column='[poutcome]' derivation='None' name='[none:poutcome:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Age,Balance,Deposit)' hidden='true' name='[Action (Age,Balance,Deposit)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:age:ok]' />
+          <groupfilter function='level-members' level='[none:balance:ok]' />
+          <groupfilter function='level-members' level='[deposit]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Campaign)' hidden='true' name='[Action (Campaign)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:campaign:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Contact,Job,Month,Poutcome)' hidden='true' name='[Action (Contact,Job,Month,Poutcome)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[contact]' />
+          <groupfilter function='level-members' level='[job]' />
+          <groupfilter function='level-members' level='[month]' />
+          <groupfilter function='level-members' level='[poutcome]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Contact,Month,Poutcome)' hidden='true' name='[Action (Contact,Month,Poutcome)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[contact]' />
+          <groupfilter function='level-members' level='[month]' />
+          <groupfilter function='level-members' level='[poutcome]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Deposit,Job)' hidden='true' name='[Action (Deposit,Job)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[deposit]' />
+          <groupfilter function='level-members' level='[job]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Job)' hidden='true' name='[Action (Job)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[job]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Month)' hidden='true' name='[Action (Month)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[month]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)' hidden='true' name='[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+          <groupfilter function='level-members' level='[none:age:ok]' />
+          <groupfilter function='level-members' level='[none:balance:ok]' />
+          <groupfilter function='level-members' level='[none:day:ok]' />
+          <groupfilter function='level-members' level='[job]' />
+          <groupfilter function='level-members' level='[loan]' />
+          <groupfilter function='level-members' level='[month]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (deposit_flag,Age,Balance,Day,Job,Month)' hidden='true' name='[Action (deposit_flag,Age,Balance,Day,Job,Month)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+          <groupfilter function='level-members' level='[none:age:ok]' />
+          <groupfilter function='level-members' level='[none:balance:ok]' />
+          <groupfilter function='level-members' level='[none:day:ok]' />
+          <groupfilter function='level-members' level='[job]' />
+          <groupfilter function='level-members' level='[month]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (deposit_flag,Age,Balance,Job)' hidden='true' name='[Action (deposit_flag,Age,Balance,Job)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+          <groupfilter function='level-members' level='[none:age:ok]' />
+          <groupfilter function='level-members' level='[none:balance:ok]' />
+          <groupfilter function='level-members' level='[job]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1ykkwys1mfhubi1fjoacg1jdiajf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marital</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>education</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>default</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[default]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>default</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5659</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>housing</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[housing]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>housing</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[loan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>loan</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contact</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contact</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1766</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>campaign</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[campaign]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>campaign</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pdays</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pdays]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pdays</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>912</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>previous</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[previous]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>previous</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>poutcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[poutcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>poutcome</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deposit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deposit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deposit</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[balance_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance_category</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_group</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contact_known</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[contact_known]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contact_known</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month_num</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Bank_Target_Marketing_Dataset_feature_engineered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:poutcome:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;failure&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;success&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:job:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;student&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;admin.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;management&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;technician&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;retired&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;blue-collar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;self-employed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;unemployed&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;services&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;entrepreneur&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;housemaid&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:deposit:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Thailand&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Bank_Target_Marketing_Dataset_feature_engineered.csv' id='Bank_Target_Marketing_Dataset_feature_engineered.csv_0368AA726F3E48A8BA52C5E9F5D6546C'>
+            <properties context=''>
+              <relation connection='textscan.10525nc005h09a14128ed0u1a34c' name='Bank_Target_Marketing_Dataset_feature_engineered.csv' table='[Bank_Target_Marketing_Dataset_feature_engineered#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='age' ordinal='0' />
+                  <column datatype='string' name='job' ordinal='1' />
+                  <column datatype='string' name='marital' ordinal='2' />
+                  <column datatype='string' name='education' ordinal='3' />
+                  <column datatype='string' name='default' ordinal='4' />
+                  <column datatype='integer' name='balance' ordinal='5' />
+                  <column datatype='string' name='housing' ordinal='6' />
+                  <column datatype='string' name='loan' ordinal='7' />
+                  <column datatype='string' name='contact' ordinal='8' />
+                  <column datatype='integer' name='day' ordinal='9' />
+                  <column datatype='string' name='month' ordinal='10' />
+                  <column datatype='integer' name='duration' ordinal='11' />
+                  <column datatype='integer' name='campaign' ordinal='12' />
+                  <column datatype='integer' name='pdays' ordinal='13' />
+                  <column datatype='integer' name='previous' ordinal='14' />
+                  <column datatype='string' name='poutcome' ordinal='15' />
+                  <column datatype='string' name='deposit' ordinal='16' />
+                  <column datatype='string' name='balance_category' ordinal='17' />
+                  <column datatype='string' name='age_group' ordinal='18' />
+                  <column datatype='boolean' name='contact_known' ordinal='19' />
+                  <column datatype='integer' name='month_num' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 3 (generated)' name='[Action3_293BAAC5490742759C7F21D64ABE271B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3_94D97C5D936548E7BF075F09532A6D23]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action4_32468C1E56764D578DADDB8B47039A6E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet='Stacked Bar:อัตราตอบรับตามอาชีพv' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet='Bar Chart:ประสิทธิภาพของแคมเปญ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[day]' derivation='None' name='[none:day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+            <column-instance column='[loan]' derivation='None' name='[none:loan:nk]' pivot='key' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
+            <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_612122FB488948ADB81E857F434D5927]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[contact]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+              <groupfilter function='level-members' level='[poutcome]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Month,Poutcome)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_612122FB488948ADB81E857F434D5927]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[contact]' />
+              <groupfilter function='level-members' level='[month]' />
+              <groupfilter function='level-members' level='[poutcome]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
+            <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Month,Poutcome)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[none:day:qk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[none:month:nk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[none:loan:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Age:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:age:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Job:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Balance:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>deposit_flag:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Day:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:day:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Month:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:month:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Loan: <[federated.0diev1n170giwa1abdp820l8gjad].[none:loan:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{344113BB-B7DE-48A1-B8D8-9D78881F0DBF}' />
+    </worksheet>
+    <worksheet name='Bar Chart: อัตราตอบรับแยกตามกลุ่มอายุ'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='response_rate ' datatype='real' name='[Calculation_1987494821857988608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [deposit]=&quot;yes&quot; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+            </column>
+            <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1987494821857988608]' derivation='User' name='[usr:Calculation_1987494821857988608:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0diev1n170giwa1abdp820l8gjad].[none:age_group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[none:age_group:nk]' />
+              <text column='[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:age_group:nk]</cols>
+      </table>
+      <simple-id uuid='{76BDCFB6-4545-46D4-8F12-39A020BAD65C}' />
+    </worksheet>
+    <worksheet name='Bar Chart:ประสิทธิภาพของแคมเปญ'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ประสิทธิภาพของแคมเปญต่อจำนวนการ
+โทร</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='conversion_rate' datatype='real' name='[Calculation_662592106816413705]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[day]' derivation='None' name='[none:day:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[deposit]' derivation='Count' name='[pcto:cnt:deposit:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106816413705]' derivation='User' name='[usr:Calculation_662592106816413705:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_612122FB488948ADB81E857F434D5927]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[contact]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+              <groupfilter function='level-members' level='[poutcome]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
+            <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[loan]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0diev1n170giwa1abdp820l8gjad].[pcto:cnt:deposit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_662592106816413705:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:campaign:qk]</cols>
+      </table>
+      <simple-id uuid='{87C40463-7087-49D9-83CB-29B92BF999FE}' />
+    </worksheet>
+    <worksheet name='Box-and-Whisker: ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับ การฝากเงินเพิ่ม'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deposit]' derivation='None' name='[none:deposit:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' field-type='quantitative' scale='symlog' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='quantiles' id='refline1' label-type='none' scope='per-pane' symmetric='true' tile-count='4' value-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' enable-instant-analytics='true' formula='median' id='refline2' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]' z-order='4' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Balance:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Deposit:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[none:balance:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FEB16237-27FF-4887-9615-F866C24635A8}' />
+    </worksheet>
+    <worksheet name='Line Chart: แนวโน้มอัตราการตอบรับแคมเปญตามเวลา'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='response_rate ' datatype='real' name='[Calculation_1987494821857988608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [deposit]=&quot;yes&quot; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+            </column>
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1987494821857988608]' derivation='User' name='[usr:Calculation_1987494821857988608:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:month:nk]</cols>
+      </table>
+      <simple-id uuid='{B2B25FF2-12FC-44EB-B50C-FB081FC2B947}' />
+    </worksheet>
+    <worksheet name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[day]' derivation='None' name='[none:day:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='Sum' name='[sum:Calculation_662592106711130115:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[campaign]' derivation='Sum' name='[sum:campaign:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
+            <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
+            <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[loan]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0diev1n170giwa1abdp820l8gjad].[sum:Calculation_662592106711130115:qk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[sum:campaign:qk]' />
+              <lod column='[federated.0diev1n170giwa1abdp820l8gjad].[sum:campaign:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[sum:Calculation_662592106711130115:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:month:nk]</cols>
+      </table>
+      <simple-id uuid='{78615BD4-7766-41A9-848E-2DFD1FA424BE}' />
+    </worksheet>
+    <worksheet name='Square plot(Calendar density)วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='response_rate ' datatype='real' name='[Calculation_1987494821857988608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [deposit]=&quot;yes&quot; THEN 1 ELSE 0 END) / COUNT([deposit])' />
+            </column>
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[day]' derivation='None' name='[none:day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1987494821857988608]' derivation='User' name='[usr:Calculation_1987494821857988608:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[none:month:nk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:day:qk]</cols>
+      </table>
+      <simple-id uuid='{3E003803-8F18-465F-9D71-9EF7D417CCB3}' />
+    </worksheet>
+    <worksheet name='Stacked Bar:อัตราตอบรับตามอาชีพv'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>การตอบรับตามอาชีพ</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column-instance column='[deposit]' derivation='Count' name='[cnt:deposit:qk]' pivot='key' type='quantitative' />
+            <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column caption='Marital' datatype='string' name='[marital]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[day]' derivation='None' name='[none:day:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[deposit]' derivation='None' name='[none:deposit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marital]' derivation='None' name='[none:marital:nk]' pivot='key' type='nominal' />
+            <column-instance column='[deposit]' derivation='Count' name='[pcto:cnt:deposit:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
+            <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_612122FB488948ADB81E857F434D5927]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[contact]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+              <groupfilter function='level-members' level='[poutcome]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Month,Poutcome)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_612122FB488948ADB81E857F434D5927]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[contact]' />
+              <groupfilter function='level-members' level='[month]' />
+              <groupfilter function='level-members' level='[poutcome]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
+            <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[loan]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:education:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;primary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;secondary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;tertiary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:marital:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;divorced&quot;' />
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;married&quot;' />
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;single&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0diev1n170giwa1abdp820l8gjad].[cnt:deposit:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:education:nk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:marital:nk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Month,Poutcome)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' value='99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]' />
+              <text column='[federated.0diev1n170giwa1abdp820l8gjad].[pcto:cnt:deposit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[cnt:deposit:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]</cols>
+      </table>
+      <simple-id uuid='{DE58A44E-36AC-4F38-ACA7-24F762CE44E3}' />
+    </worksheet>
+    <worksheet name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Target_Marketing_Dataset_feature_engineered' name='federated.0diev1n170giwa1abdp820l8gjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0diev1n170giwa1abdp820l8gjad'>
+            <column caption='deposit_flag' datatype='integer' name='[Calculation_662592106711130115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [deposit] = &apos;yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='Avg' name='[avg:Calculation_662592106711130115:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+            <column caption='Deposit' datatype='string' name='[deposit]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+            <column caption='Marital' datatype='string' name='[marital]' role='dimension' type='nominal' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_662592106711130115]' derivation='None' name='[none:Calculation_662592106711130115:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[balance]' derivation='None' name='[none:balance:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[day]' derivation='None' name='[none:day:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marital]' derivation='None' name='[none:marital:nk]' pivot='key' type='nominal' />
+            <column-instance column='[campaign]' derivation='Sum' name='[sum:campaign:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
+            <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[loan]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
+              <groupfilter function='level-members' level='[none:age:ok]' />
+              <groupfilter function='level-members' level='[none:balance:ok]' />
+              <groupfilter function='level-members' level='[none:day:ok]' />
+              <groupfilter function='level-members' level='[job]' />
+              <groupfilter function='level-members' level='[month]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:education:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;primary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;secondary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;tertiary&quot;' />
+              <groupfilter function='member' level='[none:education:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]'>
+            <groupfilter function='level-members' level='[none:job:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[none:marital:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;divorced&quot;' />
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;married&quot;' />
+              <groupfilter function='member' level='[none:marital:nk]' member='&quot;single&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:marital:nk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:education:nk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0diev1n170giwa1abdp820l8gjad].[avg:Calculation_662592106711130115:qk]</rows>
+        <cols>[federated.0diev1n170giwa1abdp820l8gjad].[sum:campaign:qk]</cols>
+      </table>
+      <simple-id uuid='{CBA83970-7843-4A9C-A379-16D15E445E8D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97892' id='35' param='horz' type-v2='layout-flow' w='78434' x='635' y='1054'>
+            <zone h='97892' id='21' type-v2='layout-basic' w='78434' x='635' y='1054'>
+              <zone h='53024' id='13' param='horz' type-v2='layout-flow' w='78434' x='635' y='1054'>
+                <zone h='53024' id='31' is-fixed='true' type-v2='layout-basic' w='78434' x='635' y='1054'>
+                  <zone h='53024' id='9' param='horz' type-v2='layout-flow' w='39238' x='635' y='1054'>
+                    <zone h='53024' id='7' type-v2='layout-basic' w='39238' x='635' y='1054'>
+                      <zone h='53024' id='5' name='Stacked Bar:อัตราตอบรับตามอาชีพv' w='39238' x='635' y='1054'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='53024' id='32' param='horz' type-v2='layout-flow' w='39196' x='39873' y='1054'>
+                    <zone fixed-size='818' h='53024' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='39196' x='39873' y='1054'>
+                      <zone h='53024' id='11' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' w='39196' x='39873' y='1054'>
+                        <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='44868' id='30' name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน' w='39216' x='635' y='54078'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44868' id='37' name='Bar Chart:ประสิทธิภาพของแคมเปญ' w='39218' x='39851' y='54078'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='97892' id='33' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' w='20296' x='79069' y='1054'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3689' id='14' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type-v2='color' w='18348' x='15965' y='2240' />
+        <zone h='4084' id='36' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type-v2='color' w='11279' x='66640' y='55072' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97892' id='44' param='vert' type-v2='layout-flow' w='98730' x='635' y='1054'>
+                <zone fixed-size='280' h='53024' id='5' is-fixed='true' name='Stacked Bar:อัตราตอบรับตามอาชีพv' w='42850' x='635' y='1054'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53024' id='11' is-fixed='true' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' w='35584' x='43485' y='1054'>
+                  <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3689' id='14' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type-v2='color' w='18348' x='15965' y='2240'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97892' id='33' is-fixed='true' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' w='20296' x='79069' y='1054'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4084' id='36' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type-v2='color' w='11279' x='66640' y='55072'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44868' id='30' is-fixed='true' name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน' w='39216' x='635' y='54078'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44868' id='37' is-fixed='true' name='Bar Chart:ประสิทธิภาพของแคมเปญ' w='39218' x='39851' y='54078'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{19ACDD96-9438-4842-BB3A-74D11804EC7E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า'>
+      <viewpoints>
+        <viewpoint name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bar Chart:ประสิทธิภาพของแคมเปญ'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stacked Bar:อัตราตอบรับตามอาชีพv'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2D77A232-BD2F-41EF-BB52-7C9F72F10F49}' />
+    </window>
+    <window class='worksheet' name='Line Chart: แนวโน้มอัตราการตอบรับแคมเปญตามเวลา'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{094EF404-C694-4F1E-A0BB-901ED25F6536}' />
+    </window>
+    <window class='worksheet' name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3AA364EF-13BA-41AB-B050-93260396FBE7}' />
+    </window>
+    <window class='worksheet' name='Stacked Bar:อัตราตอบรับตามอาชีพv'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A1B47F16-42EF-4ACB-A615-BFE65B4E4D83}' />
+    </window>
+    <window class='worksheet' name='Bar Chart: อัตราตอบรับแยกตามกลุ่มอายุ'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:age_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{77DECCD0-1BFE-4116-A307-83058E2B0B38}' />
+    </window>
+    <window class='worksheet' name='Box-and-Whisker: ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับ การฝากเงินเพิ่ม'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:deposit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{96EEFA2B-24D7-44EC-A0FC-EA094A065817}' />
+    </window>
+    <window class='worksheet' name='Square plot(Calendar density)วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[usr:Calculation_1987494821857988608:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9DBC6ECC-75B5-4A31-8439-5015A78A9A45}' />
+    </window>
+    <window class='worksheet' name='Bar Chart:ประสิทธิภาพของแคมเปญ'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E9C17FE2-1D58-4583-B3BF-9D38223FFB6A}' />
+    </window>
+    <window class='worksheet' maximized='true' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1BFBC6C0-4617-4C60-8EF5-3FE1042486C6}' />
+    </window>
+    <window class='worksheet' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A9F1F11D-3E55-442B-A0C3-6AEFE5CFF0CA}' />
+    </window>
+  </windows>
+</workbook>

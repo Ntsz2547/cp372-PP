@@ -1,6 +1,6 @@
 # CP372 Final Project – Bank Target Marketing
 
-This repository contains the final project for CP372: Data Analysis and Visualization. The project focuses on analyzing direct marketing campaign data from a Portuguese banking institution to generate actionable insights and recommendations for improving campaign performance.
+This repository contains the final project for CP372: Data Analysis and Visualization. The project focuses on analyzing direct marketing campaign data from a banking institution to generate actionable insights and recommendations for improving campaign performance.
 
 ---
 ## Table of Contents
@@ -10,18 +10,19 @@ This repository contains the final project for CP372: Data Analysis and Visualiz
 - [Data Preparation](#data-preparation)
   - [1. Data Cleaning](#1-data-cleaning)
   - [2. Feature Engineering](#2-feature-engineering)
-- [Data Visualization](#data-visualization)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [In-Depth Analysis](#in-depth-analysis)
 - [Deliverables](#deliverables)
 
 ---
 
 ##  Member
 
-- Parit Pongsai (ID: 65102010118)
+- ปริชญ์ ผ่องใส (ID: 65102010118)
 
 ---
 
-##  Project Overview
+##  Overview
 
 The goal of this project is to explore and analyze customer demographic and campaign data to better understand patterns in marketing campaign success. We aim to provide insights that can help marketing teams improve customer targeting and campaign effectiveness.
 
@@ -35,12 +36,13 @@ https://public.tableau.com/views/CP372_Final_Project/LineChart?:language=th-TH&p
 
 Google Colab Link:
 https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sharing
+
 ---
 
 ## Tools & Technologies
 
-- Python (pandas, numpy, matplotlib, seaborn, scikit-learn)
-- Jupyter Notebook
+- Python (pandas, numpy, matplotlib, seaborn, scikit-learn, etc.)
+- Google Colab
 - Tableau Public
 - GitHub
 
@@ -48,7 +50,7 @@ https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sh
 
 ##  Data Preparation
 
-## 0.Import  Important Library and File from KAGGLE
+### 1.Import  Important Library and File from KAGGLE
 ```python
 import kagglehub
 
@@ -61,7 +63,7 @@ print("Path to dataset files:", path)
 import pandas as pd
 import numpy as np
 ```
-### 1. Data Cleaning
+### 2. Data Cleaning
 - Checked file shape , Verified correct data types etc.
 ```python
 data.shape
@@ -79,7 +81,7 @@ data.duplicated().sum()
 df.drop_duplicates()
 ```
 
-### 2. Feature Engineering
+### 3. Feature Engineering
 
 - Created new features such as:
 
@@ -114,7 +116,7 @@ data["month_num"] = data["month"].apply(lambda x: month_order.index(x.lower()) +
 #deposit flag
 data["deposit_flag"] = data["deposit"].apply(lambda x: 1 if x == "yes" else 0)
 ```
-- Download data that we alredy do feature engineer 
+### 4. Download data that we alredy do feature engineer 
 ```python 
 data.to_csv("Bank_Target_Marketing_Dataset_feature_engineered.csv", index=False)
 
@@ -124,50 +126,65 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ##  Exploratory Data Analysis, EDA
-<img width="1258" alt=" การโทรและความสัมพันธ์กับการตอบรับ" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
+### 1. Number of Calls vs. Average Deposit Flag**  
+- This scatter plot shows the relationship between the total number of calls (x-axis) and the average deposit flag (y-axis), segmented by job categories.
+<img width="1258" alt="Response by Occupation" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
 
-**1. Number of Calls and Response Relationship**  
-This chart shows the relationship between the number of calls made to customers and their response to the marketing campaign.
+---
 
-<img width="1258" alt="ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับ การฝากเงินเพิ่ม" src="https://github.com/user-attachments/assets/e016516f-2343-4099-946c-d3e305232213" />
+### 2. Balance vs. Deposit Decision**  
+- This box-and-whisker plot shows the distribution of account balances for customers who made deposits (yes in green) and those who did not (no in red).
 
-**2. Balance vs. Additional Deposit**  
-This visualization illustrates the correlation between customers’ account balances and their likelihood to make an additional deposit.
+<img width="1258" alt="ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับการฝากเงินเพิ่ม" src="https://github.com/user-attachments/assets/e016516f-2343-4099-946c-d3e305232213" />
 
-<img width="1258" alt="ความสัมพันธ์อายุ vs ยอดเงินฝาก" src="https://github.com/user-attachments/assets/c5d1a4a2-67a0-4754-ad4a-9c7fa86ed6ee" />
+---
 
-**3. Age vs. Deposit Amount**  
-This plot displays the relationship between customer age and the amount they deposited.
+### 3. Age vs. Deposit Amount**  
+- This plot displays the relationship between customer age and the amount they deposited.
+
+<img width="1258" alt="Age vs. Deposit Amount" src="https://github.com/user-attachments/assets/c5d1a4a2-67a0-4754-ad4a-9c7fa86ed6ee" />
+
+---
+
+### 4. Monthly Campaign Response Trend**  
+- This chart shows the trend of campaign responses over different months.
 
 <img width="1258" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/3d843b63-1fa0-47dd-8c75-8d6a73f3b9fd" />
 
-**4. Monthly Campaign Response Trend**  
-This chart shows the trend of campaign responses over different months.
+---
+
+### 5. Campaign Response Rate Over Time**  
+- This visualization tracks the response rate to the campaign over time.
 
 <img width="1258" alt="แนวโน้มอัตราการตอบรับแคมเปญตามเวลา" src="https://github.com/user-attachments/assets/4932644d-0541-4f21-96f4-cbec67c1c6e3" />
 
-**5. Campaign Response Rate Over Time**  
-This visualization tracks the response rate to the campaign over time.
+---
+
+### 6. Campaign Effectiveness**  
+- This image summarizes the overall effectiveness of the marketing campaign.
 
 <img width="1258" alt="ประสิทธิภาพของแคมเปญ" src="https://github.com/user-attachments/assets/2f3fb123-c6ae-4e93-ad64-671cb5deda1e" />
 
-**6. Campaign Effectiveness**  
-This image summarizes the overall effectiveness of the marketing campaign.
+---
+
+### 7. Daily/Monthly Response Rate**  
+- This chart breaks down the campaign response rate by specific days or months.
 
 <img width="1258" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/4c1574b5-acd7-48ef-a613-5ec238574c15" />
 
-**7. Daily/Monthly Response Rate**  
-This chart breaks down the campaign response rate by specific days or months.
+---
+
+**8. Response Rate by Occupation**  
+- This visualization compares the campaign response rates across different occupations.
 
 <img width="1258" alt="อัตราตอบรับตามอาชีพ" src="https://github.com/user-attachments/assets/6021d7c5-1aeb-4de6-97c2-c53b799e46e8" />
 
-**8. Response Rate by Occupation**  
-This visualization compares the campaign response rates across different occupations.
+---
+
+### 9. Response Rate by Age Group**  
+- This plot shows the response rate to the campaign segmented by age groups.
 
 <img width="1258" alt="อัตราตอบรับแยกตามกลุ่มอายุ" src="https://github.com/user-attachments/assets/a711f355-97eb-4d6f-af56-4e4db74594b9" />
-
-**9. Response Rate by Age Group**  
-This plot shows the response rate to the campaign segmented by age groups.
 
 ---
 
