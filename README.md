@@ -218,9 +218,32 @@ To answer this question, we used Logistic Regression to analyze which variables 
 **Code**
 
 ```python 
-# Logistic Regression Model
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, roc_auc_score, roc_curve
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+
+# Load dataset
+df = data
+
+# 1. Data Cleaning: Remove duplicates
+df = df.drop_duplicates()
+
+# 2. Encode target variable: deposit_flag (1=yes, 0=no)
+df['deposit_flag'] = df['deposit'].map({'yes': 1, 'no': 0})
+
+# 3. Select features for modeling
+features = ['age', 'balance', 'campaign', 'previous']
+X = df[features]
+y = df['deposit_flag']
+
+# 4. Train-test split (70% train, 30% test)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42, stratify=y
+)
 
 # Train Logistic Regression model
 model = LogisticRegression(max_iter=1000)
@@ -242,11 +265,23 @@ coeff_df = pd.DataFrame({
     'coefficient': model.coef_[0]
 }).sort_values(by='coefficient', ascending=False)
 print("Feature Coefficients (Logistic Regression):\n", coeff_df)
+
+# 9. Plot ROC Curve for Logistic Regression
+fpr, tpr, _ = roc_curve(y_test, y_prob)
+plt.figure()
+plt.plot(fpr, tpr)
+plt.title('ROC Curve - Logistic Regression')
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.grid(True)
+plt.show()
 ```
 #### Result 
+
 <img width="566" alt="Roc curve" src="https://github.com/user-attachments/assets/78b7f9de-ab6c-4758-9640-e676f2aba733" />
 
 <img width="527" alt="Classification Report" src="https://github.com/user-attachments/assets/86a56eff-a39f-4fe6-befa-258ebbb251df" />
+
 - Model Performance:
   - Accuracy: ~88%
   - ROC AUC Score: 0.633
@@ -273,9 +308,13 @@ We use KMeans Clustering
 **code**
 
 ```python
-# KMeans Clustering
-from sklearn.cluster import KMeans
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, roc_auc_score, roc_curve
 from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
 
 # Standardize features
 scaler = StandardScaler()
