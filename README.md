@@ -124,7 +124,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ##  Exploratory Data Analysis, EDA
-![การโทรและความสัมพันธ์กับการตอบรับ](Tableau_Visualizations/การโทรและความสัมพันธ์กับการตอบรับ.png)
+[การโทรและความสัมพันธ์กับการตอบรับ](Tableau_Visualizations/การโทรและความสัมพันธ์กับการตอบรับ.png)
 ---
 
 ## In-Depth Analysis
