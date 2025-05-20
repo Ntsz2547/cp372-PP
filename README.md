@@ -12,7 +12,7 @@ This repository contains the final project for CP372: Data Analytics and Busines
   - [2. Feature Engineering](#2-feature-engineering)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [In-Depth Analysis](#in-depth-analysis)
-- [Deliverables](#deliverables)
+- [Resource](#resource)
 
 ---
 
@@ -244,13 +244,17 @@ coeff_df = pd.DataFrame({
 print("Feature Coefficients (Logistic Regression):\n", coeff_df)
 ```
 #### Result 
-<photo of curve>
-<classification report>
+<img width="566" alt="Roc curve" src="https://github.com/user-attachments/assets/78b7f9de-ab6c-4758-9640-e676f2aba733" />
+
+<img width="527" alt="Classification Report" src="https://github.com/user-attachments/assets/86a56eff-a39f-4fe6-befa-258ebbb251df" />
 - Model Performance:
   - Accuracy: ~88%
-  - ROC AUC Score: 0.633 
+  - ROC AUC Score: 0.633
+    
+---
 
-<photo of feature coef>
+<img width="327" alt="Feature Coefficients " src="https://github.com/user-attachments/assets/ff0d7700-78a4-4ce8-86ef-136a5164c63f" />
+
 - Feature Importance:
   - previous (+0.0999): Customers who responded positively to previous campaigns are more likely to respond again.
   - age (+0.0073): Older customers have a slightly higher likelihood of subscribing.
@@ -297,7 +301,9 @@ plt.show()
 ```
 
 ### Result
-<photo of response>
+
+<img width="589" alt="Response Rate by Customer Cluster" src="https://github.com/user-attachments/assets/e3a7156a-ad58-4002-a379-c2d059fa2f83" />
+
 - Cluster Response Rates:
   - Cluster 0: 15% (highest response rate, primary target group).
   - Cluster 1: 11.8%.
