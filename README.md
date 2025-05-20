@@ -129,7 +129,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ##  Exploratory Data Analysis, EDA
 ### 1. Number of Calls vs. Average Deposit Flag 
 - This scatter plot shows the relationship between the total number of calls (x-axis) and the average deposit flag (y-axis), segmented by job categories.
-  - Jobs like "Student" and "Retired" have higher average deposit flags with fewer calls.
+  - Jobs like "Student" and "Retired" have higher average deposit flags with fewer contact.
   - Jobs like "blue-collar" require more calls but have lower average deposit flags.
 
 <img width="1258" alt="Response by Occupation" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
@@ -183,7 +183,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ### 7. Response by Day and Month**  
 - This calendar-style heatmap shows the response rate for each day of the month across different months.
   - Darker squares indicate higher response rates.
-  - Certain days in March and December also show higher response rates.
+  - Certain days in `March` a show higher response rates.
 
 <img width="1244" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/eddcf26e-0f33-45e4-aaf2-0406e8c03044" />
 
@@ -212,19 +212,116 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 **"Which variables have the most impact on campaign response (deposit = yes)?"**
 
 To answer this question, we used Logistic Regression to analyze which variables most influence the likelihood that a customer will accept the campaign.
+- Target : `deposit_flag`
+- Feature Select :  `age`, `balance`, `campaign`,`previous`.
+
+**Code**
+
+```python 
+# Logistic Regression Model
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, roc_auc_score, roc_curve
+
+# Train Logistic Regression model
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train, y_train)
+
+# Predictions & probabilities
+y_pred = model.predict(X_test)
+y_prob = model.predict_proba(X_test)[:, 1]
+
+# Evaluation metrics
+print("\nClassification Report:\n")
+print(classification_report(y_test, y_pred))
+auc = roc_auc_score(y_test, y_prob)
+print(f"ROC AUC Score: {auc:.3f}\n")
+
+# Coefficients interpretation
+coeff_df = pd.DataFrame({
+    'feature': features,
+    'coefficient': model.coef_[0]
+}).sort_values(by='coefficient', ascending=False)
+print("Feature Coefficients (Logistic Regression):\n", coeff_df)
+```
+#### Result 
+- Model Performance:
+  - Accuracy: ~88%
+  - ROC AUC Score: 0.633 
+
+- Feature Importance:
+  - previous (+0.0999): Customers who responded positively to previous campaigns are more likely to respond again.
+  - age (+0.0073): Older customers have a slightly higher likelihood of subscribing.
+  - balance (+0.00003): Higher balances marginally increase the likelihood of subscription.
+  - campaign (-0.1358): More frequent contact reduces the likelihood of a positive response, possibly due to annoyance.
 
 ---
+### Analysis Question 2 
+**We Need To Segment the Customer**
 
-## Visualizations
-<img width="1261" alt="Dashboard" src="https://github.com/user-attachments/assets/55ba5875-8980-46a8-b6c2-7d45cd660c7a" />
+To segment customers based on behavior and likelihood of responding to campaigns.
+We use KMeans Clustering 
 
----
+- Feature Select : `age`, `balance`, `campaign`, `previous` to group customers into 4 clusters.
 
-##  Deliverables
+**code**
 
-- Jupyter Notebook: Full data analysis and cleaning process
-- Tableau Workbook (.twbx): Interactive dashboards
-- Project Canvas (PDF): Summarized project scope, objectives, metrics, and timeline
+```python
+# KMeans Clustering
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+# Standardize features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(df[features])
+
+# Fit KMeans with 4 clusters
+kmeans = KMeans(n_clusters=4, random_state=42)
+clusters = kmeans.fit_predict(X_scaled)
+df['cluster'] = clusters
+
+# Calculate response rate per cluster
+cluster_rates = df.groupby('cluster')['deposit_flag'].mean().reset_index()
+print("\nResponse Rate by Customer Cluster:")
+print(cluster_rates)
+
+# Plot response rate per cluster
+plt.figure()
+plt.bar(cluster_rates['cluster'].astype(str), cluster_rates['deposit_flag'])
+plt.xlabel('Cluster')
+plt.ylabel('Response Rate')
+plt.title('Response Rate by Customer Cluster')
+plt.show()
+```
+### Result
+- Cluster Response Rates:
+  - Cluster 0: 15% (highest response rate, primary target group).
+  - Cluster 1: 11.8%.
+  - Cluster 2: 4.3% (lowest response rate, avoid or redesign campaigns for this group).
+  - Cluster 3: 12%.
+--- 
+## Resource
+
+### Dataset Source
+
+**Sean Angelo Nathanael, "Bank Target Marketing Dataset," Kaggle.**
+- https://www.kaggle.com/datasets/seanangelonathanael/bank-target-marketing
+ 
+### Python Libraries
+
+**pandas: Data manipulation and analysis.**
+https://pandas.pydata.org/
+**numpy: Numerical computing.**
+https://numpy.org/
+**matplotlib: Data visualization.**
+https://matplotlib.org/
+**scikit-learn: Machine learning library.**
+https://scikit-learn.org/
+
+### Visualization Tool
+
+**Tableau Public: Interactive data visualization.**
+https://public.tableau.com/
+
 
 ---
 
