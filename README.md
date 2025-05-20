@@ -124,7 +124,33 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ##  Exploratory Data Analysis, EDA
-[การโทรและความสัมพันธ์กับการตอบรับ](Tableau_Visualizations/การโทรและความสัมพันธ์กับการตอบรับ.png)
+<img width="1258" alt=" การโทรและความสัมพันธ์กับการตอบรับ" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
+
+
+<img width="1258" alt="ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับ การฝากเงินเพิ่ม" src="https://github.com/user-attachments/assets/e016516f-2343-4099-946c-d3e305232213" />
+
+
+<img width="1258" alt="ความสัมพันธ์อายุ vs ยอดเงินฝาก" src="https://github.com/user-attachments/assets/c5d1a4a2-67a0-4754-ad4a-9c7fa86ed6ee" />
+
+
+<img width="1258" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/3d843b63-1fa0-47dd-8c75-8d6a73f3b9fd" />
+
+
+<img width="1258" alt="แนวโน้มอัตราการตอบรับแคมเปญตามเวลา" src="https://github.com/user-attachments/assets/4932644d-0541-4f21-96f4-cbec67c1c6e3" />
+
+
+<img width="1258" alt="ประสิทธิภาพของแคมเปญ" src="https://github.com/user-attachments/assets/2f3fb123-c6ae-4e93-ad64-671cb5deda1e" />
+
+
+<img width="1258" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/4c1574b5-acd7-48ef-a613-5ec238574c15" />
+
+
+<img width="1258" alt="อัตราตอบรับตามอาชีพ" src="https://github.com/user-attachments/assets/6021d7c5-1aeb-4de6-97c2-c53b799e46e8" />
+
+
+<img width="1258" alt="อัตราตอบรับแยกตามกลุ่มอายุ" src="https://github.com/user-attachments/assets/a711f355-97eb-4d6f-af56-4e4db74594b9" />
+
+
 ---
 
 ## In-Depth Analysis
@@ -132,6 +158,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ## Visualizations
+<img width="1261" alt="Dashboard" src="https://github.com/user-attachments/assets/55ba5875-8980-46a8-b6c2-7d45cd660c7a" />
 
 ---
 
