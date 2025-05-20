@@ -244,10 +244,13 @@ coeff_df = pd.DataFrame({
 print("Feature Coefficients (Logistic Regression):\n", coeff_df)
 ```
 #### Result 
+<photo of curve>
+<classification report>
 - Model Performance:
   - Accuracy: ~88%
   - ROC AUC Score: 0.633 
 
+<photo of feature coef>
 - Feature Importance:
   - previous (+0.0999): Customers who responded positively to previous campaigns are more likely to respond again.
   - age (+0.0073): Older customers have a slightly higher likelihood of subscribing.
@@ -292,7 +295,9 @@ plt.ylabel('Response Rate')
 plt.title('Response Rate by Customer Cluster')
 plt.show()
 ```
+
 ### Result
+<photo of response>
 - Cluster Response Rates:
   - Cluster 0: 15% (highest response rate, primary target group).
   - Cluster 1: 11.8%.
@@ -310,10 +315,13 @@ plt.show()
 
 **pandas: Data manipulation and analysis.**
 https://pandas.pydata.org/
+
 **numpy: Numerical computing.**
 https://numpy.org/
+
 **matplotlib: Data visualization.**
 https://matplotlib.org/
+
 **scikit-learn: Machine learning library.**
 https://scikit-learn.org/
 
@@ -324,5 +332,5 @@ https://public.tableau.com/
 
 
 ---
-
+by Parit Pongsai
 
