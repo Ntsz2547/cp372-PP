@@ -124,7 +124,14 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ##  Exploratory Data Analysis, EDA
+![การโทรและความสัมพันธ์กับการตอบรับ](Tableau_Visualizations/การโทรและความสัมพันธ์กับการตอบรับ.png)
+---
 
+## In-Depth Analysis
+
+---
+
+## Visualizations
 
 ---
 
@@ -132,7 +139,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 - Jupyter Notebook: Full data analysis and cleaning process
 - Tableau Workbook (.twbx): Interactive dashboards
-- Project Canvas (PDF/PowerPoint): Summarized project scope, objectives, metrics, and timeline
+- Project Canvas (PDF): Summarized project scope, objectives, metrics, and timeline
 
 ---
 
