@@ -1,6 +1,6 @@
 # CP372 Final Project – Bank Target Marketing
 
-This repository contains the final project for CP372: Data Analysis and Visualization. The project focuses on analyzing direct marketing campaign data from a banking institution to generate actionable insights and recommendations for improving campaign performance.
+This repository contains the final project for CP372: Data Analytics and Business Intelligence. The project focuses on analyzing direct marketing campaign data from a banking institution to generate actionable insights and recommendations for improving campaign performance.
 
 ---
 ## Table of Contents
@@ -32,7 +32,7 @@ We use data from :
 https://www.kaggle.com/datasets/seanangelonathanael/bank-target-marketing
 
 Tableau Dashboard:
-https://public.tableau.com/views/CP372_Final_Project/LineChart?:language=th-TH&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/views/CP372_Final_Project_118/Dashboard?:language=th-TH&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 Google Colab Link:
 https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sharing
@@ -126,63 +126,63 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ---
 
 ##  Exploratory Data Analysis, EDA
-### 1. Number of Calls vs. Average Deposit Flag**  
+### 1. Number of Calls vs. Average Deposit Flag 
 - This scatter plot shows the relationship between the total number of calls (x-axis) and the average deposit flag (y-axis), segmented by job categories.
 <img width="1258" alt="Response by Occupation" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
 
 ---
 
-### 2. Balance vs. Deposit Decision**  
-- This box-and-whisker plot shows the distribution of account balances for customers who made deposits (yes in green) and those who did not (no in red).
+### 2. Balance vs. Deposit Decision
+- This box-and-whisker plot shows the distribution of account balances for customers who made deposits (`yes` in green) and those who did not (`no` in red).
 
 <img width="1258" alt="ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับการฝากเงินเพิ่ม" src="https://github.com/user-attachments/assets/e016516f-2343-4099-946c-d3e305232213" />
 
 ---
 
-### 3. Age vs. Deposit Amount**  
-- This plot displays the relationship between customer age and the amount they deposited.
+### 3. Age vs. Balance
+- This scatter plot visualizes the relationship between customer age (x-axis) and account balance (y-axis). The color intensity represents the deposit flag (`1` for deposit, `0` for no deposit).
 
 <img width="1258" alt="Age vs. Deposit Amount" src="https://github.com/user-attachments/assets/c5d1a4a2-67a0-4754-ad4a-9c7fa86ed6ee" />
 
 ---
 
-### 4. Monthly Campaign Response Trend**  
-- This chart shows the trend of campaign responses over different months.
+### 4. Monthly Campaign Deposits
+- This line chart shows the total number of deposits `deposit_flag` over the months.
 
-<img width="1258" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/3d843b63-1fa0-47dd-8c75-8d6a73f3b9fd" />
+
 
 ---
 
-### 5. Campaign Response Rate Over Time**  
-- This visualization tracks the response rate to the campaign over time.
+### 5. Monthly Campaign Response Rate
+- This line chart tracks the response rate (y-axis) over the months (x-axis)
 
 <img width="1258" alt="แนวโน้มอัตราการตอบรับแคมเปญตามเวลา" src="https://github.com/user-attachments/assets/4932644d-0541-4f21-96f4-cbec67c1c6e3" />
 
 ---
 
-### 6. Campaign Effectiveness**  
-- This image summarizes the overall effectiveness of the marketing campaign.
+### 6.  Campaign Effectiveness by Number of Calls**  
+- This bar chart shows the conversion rate (y-axis) based on the number of calls (x-axis).
 
 <img width="1258" alt="ประสิทธิภาพของแคมเปญ" src="https://github.com/user-attachments/assets/2f3fb123-c6ae-4e93-ad64-671cb5deda1e" />
 
 ---
 
-### 7. Daily/Monthly Response Rate**  
-- This chart breaks down the campaign response rate by specific days or months.
+### 7. Response by Day and Month**  
+- This calendar-style heatmap shows the response rate for each day of the month across different months.
 
 <img width="1258" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/4c1574b5-acd7-48ef-a613-5ec238574c15" />
 
 ---
 
 **8. Response Rate by Occupation**  
-- This visualization compares the campaign response rates across different occupations.
+- This bar chart shows the number of deposits (`yes` in green, `no` in red) segmented by job categories.
 
 <img width="1258" alt="อัตราตอบรับตามอาชีพ" src="https://github.com/user-attachments/assets/6021d7c5-1aeb-4de6-97c2-c53b799e46e8" />
 
 ---
 
-### 9. Response Rate by Age Group**  
-- This plot shows the response rate to the campaign segmented by age groups.
+### 9. Response by Age Group
+- This bar chart shows the response rate segmented by age groups (`Young`, `Adult`, `Senior`, `Elderly`).
 
 <img width="1258" alt="อัตราตอบรับแยกตามกลุ่มอายุ" src="https://github.com/user-attachments/assets/a711f355-97eb-4d6f-af56-4e4db74594b9" />
 

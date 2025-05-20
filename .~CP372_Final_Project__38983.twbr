@@ -922,14 +922,6 @@
         <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
       </command>
     </action>
-    <action caption='Filter 2 (generated)' name='[Action3_94D97C5D936548E7BF075F09532A6D23]'>
-      <activation auto-clear='true' type='on-select' />
-      <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' />
-      <command command='tsc:tsl-filter'>
-        <param name='special-fields' value='all' />
-        <param name='target' value='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' />
-      </command>
-    </action>
     <action caption='Filter 1 (generated)' name='[Action4_32468C1E56764D578DADDB8B47039A6E]'>
       <activation auto-clear='true' type='on-select' />
       <source dashboard='Dashboard : พฤติกรรมการตอบรับแคมเปญของลููกค้า' type='sheet' worksheet='Stacked Bar:อัตราตอบรับตามอาชีพv' />
@@ -995,6 +987,12 @@
               <groupfilter function='level-members' level='[poutcome]' />
             </groupfilter>
           </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_32468C1E56764D578DADDB8B47039A6E]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[deposit]' member='&quot;yes&quot;' />
+              <groupfilter function='member' level='[job]' member='&quot;blue-collar&quot;' />
+            </groupfilter>
+          </filter>
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
             <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
@@ -1003,10 +1001,15 @@
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]</column>
           </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
@@ -1144,6 +1147,12 @@
               <groupfilter function='level-members' level='[poutcome]' />
             </groupfilter>
           </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_32468C1E56764D578DADDB8B47039A6E]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[deposit]' member='&quot;yes&quot;' />
+              <groupfilter function='member' level='[job]' member='&quot;blue-collar&quot;' />
+            </groupfilter>
+          </filter>
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
             <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
@@ -1164,6 +1173,7 @@
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Contact,Job,Month,Poutcome)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1317,6 +1327,12 @@
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
             <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_32468C1E56764D578DADDB8B47039A6E]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[deposit]' member='&quot;yes&quot;' />
+              <groupfilter function='member' level='[job]' member='&quot;blue-collar&quot;' />
+            </groupfilter>
+          </filter>
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Job)]'>
             <groupfilter function='level-members' level='[job]' user:ui-action-filter='[Action3_94D97C5D936548E7BF075F09532A6D23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
@@ -1346,6 +1362,7 @@
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1587,6 +1604,12 @@
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]'>
             <groupfilter function='level-members' level='[none:campaign:ok]' user:ui-action-filter='[Action4_CAD60684583C4377AC1AC82EDEDC4F2C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
+          <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_32468C1E56764D578DADDB8B47039A6E]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[deposit]' member='&quot;yes&quot;' />
+              <groupfilter function='member' level='[job]' member='&quot;blue-collar&quot;' />
+            </groupfilter>
+          </filter>
           <filter class='categorical' column='[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]'>
             <groupfilter function='crossjoin' user:ui-action-filter='[Action3_293BAAC5490742759C7F21D64ABE271B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
               <groupfilter function='level-members' level='[none:Calculation_662592106711130115:ok]' />
@@ -1633,6 +1656,7 @@
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Month)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (deposit_flag,Age,Balance,Day,Job,Loan,Month)]</column>
             <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Campaign)]</column>
+            <column>[federated.0diev1n170giwa1abdp820l8gjad].[Action (Deposit,Job)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1660,13 +1684,42 @@
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97892' id='35' param='horz' type-v2='layout-flow' w='78434' x='635' y='1054'>
-            <zone h='97892' id='21' type-v2='layout-basic' w='78434' x='635' y='1054'>
-              <zone h='53024' id='13' param='horz' type-v2='layout-flow' w='78434' x='635' y='1054'>
-                <zone h='53024' id='31' is-fixed='true' type-v2='layout-basic' w='78434' x='635' y='1054'>
-                  <zone h='53024' id='9' param='horz' type-v2='layout-flow' w='39238' x='635' y='1054'>
-                    <zone h='53024' id='7' type-v2='layout-basic' w='39238' x='635' y='1054'>
-                      <zone h='53024' id='5' name='Stacked Bar:อัตราตอบรับตามอาชีพv' w='39238' x='635' y='1054'>
+          <zone h='97970' id='52' param='horz' type-v2='layout-flow' w='98730' x='635' y='1015'>
+            <zone h='97970' id='50' type-v2='layout-basic' w='98730' x='635' y='1015'>
+              <zone h='97970' id='48' param='horz' type-v2='layout-flow' w='64337' x='635' y='1015'>
+                <zone h='97970' id='46' type-v2='layout-basic' w='64337' x='635' y='1015'>
+                  <zone h='97970' id='35' param='horz' type-v2='layout-flow' w='64337' x='635' y='1015'>
+                    <zone h='97970' id='21' type-v2='layout-basic' w='64337' x='635' y='1015'>
+                      <zone h='53066' id='13' param='horz' type-v2='layout-flow' w='64337' x='635' y='1015'>
+                        <zone h='53066' id='31' is-fixed='true' type-v2='layout-basic' w='64337' x='635' y='1015'>
+                          <zone h='53066' id='9' param='horz' type-v2='layout-flow' w='32184' x='635' y='1015'>
+                            <zone h='53066' id='7' type-v2='layout-basic' w='32184' x='635' y='1015'>
+                              <zone h='53066' id='5' name='Stacked Bar:อัตราตอบรับตามอาชีพv' w='32184' x='635' y='1015'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                          <zone h='53066' id='32' param='horz' type-v2='layout-flow' w='32153' x='32819' y='1015'>
+                            <zone fixed-size='818' h='53066' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='32153' x='32819' y='1015'>
+                              <zone h='53066' id='11' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' w='32153' x='32819' y='1015'>
+                                <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='44904' id='30' name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน' w='32166' x='635' y='54081'>
                         <zone-style>
                           <format attr='border-color' value='#000000' />
                           <format attr='border-style' value='none' />
@@ -1674,12 +1727,7 @@
                           <format attr='margin' value='4' />
                         </zone-style>
                       </zone>
-                    </zone>
-                  </zone>
-                  <zone h='53024' id='32' param='horz' type-v2='layout-flow' w='39196' x='39873' y='1054'>
-                    <zone fixed-size='818' h='53024' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='39196' x='39873' y='1054'>
-                      <zone h='53024' id='11' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' w='39196' x='39873' y='1054'>
-                        <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                      <zone h='44904' id='37' name='Bar Chart:ประสิทธิภาพของแคมเปญ' w='32171' x='32801' y='54081'>
                         <zone-style>
                           <format attr='border-color' value='#000000' />
                           <format attr='border-style' value='none' />
@@ -1691,15 +1739,7 @@
                   </zone>
                 </zone>
               </zone>
-              <zone h='44868' id='30' name='Line:Chart :แนวโน้มการตอบรับแคมเปญรายเดือน' w='39216' x='635' y='54078'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='44868' id='37' name='Bar Chart:ประสิทธิภาพของแคมเปญ' w='39218' x='39851' y='54078'>
+              <zone h='97970' id='49' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' w='34393' x='64972' y='1015'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1709,14 +1749,6 @@
               </zone>
             </zone>
           </zone>
-          <zone h='97892' id='33' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' w='20296' x='79069' y='1054'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
           <zone-style>
             <format attr='border-color' value='#000000' />
             <format attr='border-style' value='none' />
@@ -1724,8 +1756,8 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone h='3689' id='14' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type-v2='color' w='18348' x='15965' y='2240' />
-        <zone h='4084' id='36' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type-v2='color' w='11279' x='66640' y='55072' />
+        <zone h='3680' id='14' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type-v2='color' w='14932' x='15965' y='2284' />
+        <zone h='4695' id='53' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type-v2='color' w='14932' x='82844' y='5838' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
@@ -1753,24 +1785,6 @@
                   </zone-style>
                 </zone>
                 <zone h='3689' id='14' name=' Circle:ความสัมพันธ์อายุ vs ยอดเงินฝาก' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:Calculation_662592106711130115:qk]' type-v2='color' w='18348' x='15965' y='2240'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='97892' id='33' is-fixed='true' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' w='20296' x='79069' y='1054'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='4084' id='36' name='ความสัมพันธ์ของความถี่ในการติดต่อกับการตอบรับแคมเปญในแต่ละอาชีพ' pane-specification-id='0' param='[federated.0diev1n170giwa1abdp820l8gjad].[none:job:nk]' type-v2='color' w='11279' x='66640' y='55072'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1830,7 +1844,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='5' />
       <simple-id uuid='{2D77A232-BD2F-41EF-BB52-7C9F72F10F49}' />
     </window>
     <window class='worksheet' name='Line Chart: แนวโน้มอัตราการตอบรับแคมเปญตามเวลา'>
