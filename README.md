@@ -173,6 +173,11 @@ This plot shows the response rate to the campaign segmented by age groups.
 
 ## In-Depth Analysis
 
+### Analysis Question 1  
+**"Which variables have the most impact on campaign response (deposit = yes)?"**
+
+To answer this question, we used Logistic Regression to analyze which variables most influence the likelihood that a customer will accept the campaign.
+
 ---
 
 ## Visualizations
