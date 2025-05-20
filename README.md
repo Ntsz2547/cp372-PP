@@ -97,25 +97,26 @@ df.drop_duplicates()
   data["age_group"] = pd.cut(data["age"], bins=[0, 30, 45, 60, 100],
                          labels=["Young", "Adult", "Senior", "Elderly"])
   ```
-- If have no contact data change it to unknown
-```python
-# ช่องทางการติดต่อ
-data["contact_known"] = data["contact"].apply(lambda x: x != "unknown")
-```
+  - If have no contact data change it to unknown
+  ```python
+  # ช่องทางการติดต่อ
+  data["contact_known"] = data["contact"].apply(lambda x: x != "unknown")
+  ```
 
-- Month to number 
-```python
-# เดือนเป็นตัวเลข
-month_order = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
+  - Month to number 
+  ```python
+  # เดือนเป็นตัวเลข
+  month_order = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
                'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-data["month_num"] = data["month"].apply(lambda x: month_order.index(x.lower()) + 1 if x.lower() in month_order else None)
-```
+  data["month_num"] = data["month"].apply(lambda x: month_order.index(x.lower()) + 1 if x.lower() in month_order else None)
+  ```
 
-- deposit flag if deposit = yes = 1 then = 0
-```python
-#deposit flag
-data["deposit_flag"] = data["deposit"].apply(lambda x: 1 if x == "yes" else 0)
-```
+  - deposit flag if deposit = yes = 1 then = 0
+  ```python
+  #deposit flag
+  data["deposit_flag"] = data["deposit"].apply(lambda x: 1 if x == "yes" else 0)
+  ```
+  
 ### 4. Download data that we alredy do feature engineer 
 ```python 
 data.to_csv("Bank_Target_Marketing_Dataset_feature_engineered.csv", index=False)
@@ -130,7 +131,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 - This scatter plot shows the relationship between the total number of calls (x-axis) and the average deposit flag (y-axis), segmented by job categories.
   - Jobs like "Student" and "Retired" have higher average deposit flags with fewer calls.
   - Jobs like "blue-collar" require more calls but have lower average deposit flags.
-  
+
 <img width="1258" alt="Response by Occupation" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
 
 ---
