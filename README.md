@@ -6,7 +6,7 @@ This repository contains the final project for CP372: Data Analytics and Busines
 ## Table of Contents
 - [Member](#member)
 - [Project Overview](#overview)
-- [Tools & Technologies](#tools--technologies)
+- [Tools](#tools)
 - [Data Preparation](#data-preparation)
   - [1. Data Cleaning](#1-data-cleaning)
   - [2. Feature Engineering](#2-feature-engineering)
@@ -39,7 +39,7 @@ https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sh
 
 ---
 
-## Tools & Technologies
+## Tools 
 
 - Python (pandas, numpy, matplotlib, seaborn, scikit-learn, etc.)
 - Google Colab
