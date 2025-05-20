@@ -12,7 +12,9 @@ This repository contains the final project for CP372: Data Analytics and Busines
   - [2. Feature Engineering](#2-feature-engineering)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [In-Depth Analysis](#in-depth-analysis)
+- [Conclusion](#conclusion)
 - [Resource](#resource)
+
 
 ---
 
@@ -155,8 +157,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ### 4. Monthly Campaign Deposits
 - This line chart shows the total number of deposits `deposit_flag` over the months.
-  - The highest number of deposits occurs in March and May.
-  - There is a significant drop in deposits during the summer months (June to August).
+  - The highest number of deposits occurs in March and August.
 
 <img width="1244" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/5aa4bea2-cea8-4296-a0c2-c27fdcc3add3" />
 
@@ -165,7 +166,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ### 5. Monthly Campaign Response Rate
 - This line chart tracks the response rate (y-axis) over the months (x-axis).
   - The highest response rate occurs in March, followed by December.
-  - The response rate dips significantly in the middle months. `(May to August)`
+  - The response rate drops significantly in the middle months. `(May to August)`
 
 <img width="1258" alt="แนวโน้มอัตราการตอบรับแคมเปญตามเวลา" src="https://github.com/user-attachments/assets/4932644d-0541-4f21-96f4-cbec67c1c6e3" />
 
@@ -298,7 +299,7 @@ plt.show()
 
 ---
 ### Analysis Question 2 
-**We Need To Segment the Customer**
+**"We Need To Segment the Customer"**
 
 To segment customers based on behavior and likelihood of responding to campaigns.
 We use KMeans Clustering 
@@ -350,6 +351,40 @@ plt.show()
   - Cluster 3: 12%.
 
 --- 
+
+## Conclusion 
+Here’s a conclusion you can add to your **README.md** file:
+
+---
+
+## Conclusion
+
+This project analyzed the "Bank Target Marketing" dataset to uncover insights into customer behavior and campaign effectiveness. The key findings are:
+
+1. **Key Factors Influencing Campaign Success:**
+   - The variable `previous` (previous campaign success) had the most significant positive impact on the likelihood of a customer subscribing to a term deposit.
+   - Frequent contact (`campaign`) negatively impacted customer responses, indicating diminishing returns or potential annoyance.
+
+2. **Customer Segmentation:**
+   - Using KMeans clustering, customers were segmented into four groups based on their behavior and likelihood of responding to campaigns.
+   - Cluster 0 showed the highest response rate (15%) and should be the primary target for future campaigns, while Cluster 2 had the lowest response rate (4.3%) and may require a different strategy.
+
+3. **Seasonality and Campaign Timing:**
+   - Campaigns were most effective in March and May, with a significant drop in response rates during the summer months (June to August).
+
+4. **Actionable Insights:**
+   - Focus on targeting customers with a history of positive responses (`previous`).
+   - Avoid excessive contact and optimize the number of calls to improve conversion rates.
+   - Tailor campaigns to specific customer segments, particularly Cluster 0, for maximum effectiveness.
+
+### **Future Work**
+- Address class imbalance in the dataset using techniques like oversampling or undersampling.
+- Explore advanced machine learning models (e.g., Random Forest, Gradient Boosting) to improve predictive accuracy.
+- Incorporate additional features or external data to enhance the analysis.
+
+This project demonstrates how data-driven insights can optimize marketing strategies and improve campaign outcomes. By leveraging these findings, businesses can better target their customers and achieve higher success rates in future campaigns.
+
+---
 
 ## Resource
 
