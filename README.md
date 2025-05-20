@@ -183,6 +183,8 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ### 9. Response by Age Group
 - This bar chart shows the response rate segmented by age groups (`Young`, `Adult`, `Senior`, `Elderly`).
+  - The "Elderly" group has the highest response rate (42.26%).
+  - Younger groups (Young and Adult) have significantly lower response rates.
 
 <img width="1258" alt="อัตราตอบรับแยกตามกลุ่มอายุ" src="https://github.com/user-attachments/assets/a711f355-97eb-4d6f-af56-4e4db74594b9" />
 
