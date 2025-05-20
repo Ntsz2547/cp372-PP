@@ -149,7 +149,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ### 4. Monthly Campaign Deposits
 - This line chart shows the total number of deposits `deposit_flag` over the months.
 
-
+<img width="1244" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/5aa4bea2-cea8-4296-a0c2-c27fdcc3add3" />
 
 ---
 
