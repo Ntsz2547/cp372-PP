@@ -149,7 +149,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
   - Customers with higher balances are more likely to deposit (Green points).
   - Younger customers tend to have lower balances, while older customers show a wider range of balances.
 
-
+<img width="1244" alt="ความสัมพันธ์อายุ vs ยอดเงินฝาก" src="https://github.com/user-attachments/assets/e6e1a497-4bc3-43cb-acc8-9eeffd80ca99" />
 
 ---
 
@@ -176,6 +176,8 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
   - The highest conversion rate is observed with fewer calls `(1–2 calls)`.
   - As the number of calls increases, the conversion rate drops significantly.
 
+<img width="1244" alt="ประสิทธิภาพของแคมเปญ" src="https://github.com/user-attachments/assets/0999c4b1-c7d2-4047-ae41-e35469bfc5df" />
+
 ---
 
 ### 7. Response by Day and Month**  
@@ -183,7 +185,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
   - Darker squares indicate higher response rates.
   - Certain days in March and December also show higher response rates.
 
-
+<img width="1244" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/eddcf26e-0f33-45e4-aaf2-0406e8c03044" />
 
 ---
 
