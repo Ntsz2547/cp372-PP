@@ -126,30 +126,48 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 ##  Exploratory Data Analysis, EDA
 <img width="1258" alt=" การโทรและความสัมพันธ์กับการตอบรับ" src="https://github.com/user-attachments/assets/43e395ad-41a4-4e14-8466-ac56bf4a47b6" />
 
+**1. Number of Calls and Response Relationship**  
+This chart shows the relationship between the number of calls made to customers and their response to the marketing campaign.
 
 <img width="1258" alt="ความสัมพันธ์ระหว่างยอดเงินคงเหลือกับ การฝากเงินเพิ่ม" src="https://github.com/user-attachments/assets/e016516f-2343-4099-946c-d3e305232213" />
 
+**2. Balance vs. Additional Deposit**  
+This visualization illustrates the correlation between customers’ account balances and their likelihood to make an additional deposit.
 
 <img width="1258" alt="ความสัมพันธ์อายุ vs ยอดเงินฝาก" src="https://github.com/user-attachments/assets/c5d1a4a2-67a0-4754-ad4a-9c7fa86ed6ee" />
 
+**3. Age vs. Deposit Amount**  
+This plot displays the relationship between customer age and the amount they deposited.
 
 <img width="1258" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/3d843b63-1fa0-47dd-8c75-8d6a73f3b9fd" />
 
+**4. Monthly Campaign Response Trend**  
+This chart shows the trend of campaign responses over different months.
 
 <img width="1258" alt="แนวโน้มอัตราการตอบรับแคมเปญตามเวลา" src="https://github.com/user-attachments/assets/4932644d-0541-4f21-96f4-cbec67c1c6e3" />
 
+**5. Campaign Response Rate Over Time**  
+This visualization tracks the response rate to the campaign over time.
 
 <img width="1258" alt="ประสิทธิภาพของแคมเปญ" src="https://github.com/user-attachments/assets/2f3fb123-c6ae-4e93-ad64-671cb5deda1e" />
 
+**6. Campaign Effectiveness**  
+This image summarizes the overall effectiveness of the marketing campaign.
 
 <img width="1258" alt="วันไหนเดือนใดมีอัตตราการตอบรับแคมเปญเท่าไหร่" src="https://github.com/user-attachments/assets/4c1574b5-acd7-48ef-a613-5ec238574c15" />
 
+**7. Daily/Monthly Response Rate**  
+This chart breaks down the campaign response rate by specific days or months.
 
 <img width="1258" alt="อัตราตอบรับตามอาชีพ" src="https://github.com/user-attachments/assets/6021d7c5-1aeb-4de6-97c2-c53b799e46e8" />
 
+**8. Response Rate by Occupation**  
+This visualization compares the campaign response rates across different occupations.
 
 <img width="1258" alt="อัตราตอบรับแยกตามกลุ่มอายุ" src="https://github.com/user-attachments/assets/a711f355-97eb-4d6f-af56-4e4db74594b9" />
 
+**9. Response Rate by Age Group**  
+This plot shows the response rate to the campaign segmented by age groups.
 
 ---
 
