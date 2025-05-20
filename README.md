@@ -303,7 +303,9 @@ plt.show()
   - Cluster 1: 11.8%.
   - Cluster 2: 4.3% (lowest response rate, avoid or redesign campaigns for this group).
   - Cluster 3: 12%.
+
 --- 
+
 ## Resource
 
 ### Dataset Source
@@ -314,21 +316,21 @@ plt.show()
 ### Python Libraries
 
 **pandas: Data manipulation and analysis.**
-https://pandas.pydata.org/
+- https://pandas.pydata.org/
 
 **numpy: Numerical computing.**
-https://numpy.org/
+- https://numpy.org/
 
 **matplotlib: Data visualization.**
-https://matplotlib.org/
+- https://matplotlib.org/
 
 **scikit-learn: Machine learning library.**
-https://scikit-learn.org/
+- https://scikit-learn.org/
 
 ### Visualization Tool
 
 **Tableau Public: Interactive data visualization.**
-https://public.tableau.com/
+- https://public.tableau.com/
 
 
 ---
