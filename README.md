@@ -5,7 +5,7 @@ This repository contains the final project for CP372: Data Analytics and Busines
 ---
 ## Table of Contents
 - [Member](#member)
-- [Project Overview](#project-overview)
+- [Project Overview](#overview)
 - [Tools & Technologies](#tools--technologies)
 - [Data Preparation](#data-preparation)
   - [1. Data Cleaning](#1-data-cleaning)
