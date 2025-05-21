@@ -187,7 +187,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ---
 
-### 6.  Campaign Effectiveness by Number of Calls**  
+### 6.  Campaign Effectiveness by Number of Calls 
 - This bar chart shows the conversion rate (y-axis) based on the number of calls (x-axis).
   - The highest conversion rate is observed with fewer calls `(1–2 calls)`.
   - As the number of calls increases, the conversion rate drops significantly.
@@ -196,7 +196,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ---
 
-### 7. Response by Day and Month**  
+### 7. Response by Day and Month
 - This calendar-style heatmap shows the response rate for each day of the month across different months.
   - Darker squares indicate higher response rates.
   - Certain days in `March` a show higher response rates.
@@ -205,7 +205,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ---
 
-**8. Response Rate by Occupation**  
+### 8. Response Rate by Occupation
 - This bar chart shows the number of deposits (`yes` in green, `no` in red) segmented by job categories.
   - The highest response rate is from "management" and "blue-collar" jobs, but the actual deposit rate (green portion) is relatively low compared to the total.
 
