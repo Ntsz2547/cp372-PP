@@ -8,11 +8,25 @@ This repository contains the final project for CP372: Data Analytics and Busines
 - [Overview](#overview)
 - [Tools](#tools)
 - [Data Preparation](#data-preparation)
-  - [1. Data Cleaning](#1-data-cleaning)
-  - [2. Feature Engineering](#2-feature-engineering)
+  - [1. Import Important Library and File from Kaggle](#1-import-important-library-and-file-from-kaggle)
+  - [2. Data Cleaning](#2-data-cleaning)
+  - [3. Feature Engineering](#3-feature-engineering)
+  - [4. Download Data After Feature Engineering](#4-download-data-after-feature-engineering)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [1. Number of Calls vs. Average Deposit Flag](#1-number-of-calls-vs-average-deposit-flag)
+  - [2. Balance vs. Deposit Decision](#2-balance-vs-deposit-decision)
+  - [3. Age vs. Balance](#3-age-vs-balance)
+  - [4. Monthly Campaign Deposits](#4-monthly-campaign-deposits)
+  - [5. Monthly Campaign Response Rate](#5-monthly-campaign-response-rate)
+  - [6. Campaign Effectiveness by Number of Calls](#6-campaign-effectiveness-by-number-of-calls)
+  - [7. Response by Day and Month](#7-response-by-day-and-month)
+  - [8. Response Rate by Occupation](#8-response-rate-by-occupation)
+  - [9. Response by Age Group](#9-response-by-age-group)
 - [In-Depth Analysis](#in-depth-analysis)
+  - [Analysis Question 1: Key Factors Influencing Campaign Success](#analysis-question-1-key-factors-influencing-campaign-success)
+  - [Analysis Question 2: Customer Segmentation](#analysis-question-2-customer-segmentation)
 - [Conclusion](#conclusion)
+- [Future Work](#future-work)
 - [Resource](#resource)
 
 
@@ -278,7 +292,7 @@ plt.ylabel('True Positive Rate')
 plt.grid(True)
 plt.show()
 ```
-#### Result 
+### **Result** 
 
 <img width="566" alt="Roc curve" src="https://github.com/user-attachments/assets/78b7f9de-ab6c-4758-9640-e676f2aba733" />
 
@@ -341,7 +355,7 @@ plt.title('Response Rate by Customer Cluster')
 plt.show()
 ```
 
-### Result
+### **Result**
 
 <img width="589" alt="Response Rate by Customer Cluster" src="https://github.com/user-attachments/assets/e3a7156a-ad58-4002-a379-c2d059fa2f83" />
 
