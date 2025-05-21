@@ -53,6 +53,12 @@ https://public.tableau.com/views/CP372_Final_Project_118/Dashboard?:language=th-
 Google Colab Link:
 https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sharing
 
+Project Canvas Link :
+https://www.canva.com/design/DAGn0IuoSH4/XFs5QN_WDlTxFw6bjsebPQ/edit?utm_content=DAGn0IuoSH4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+Presentation Link:
+https://youtu.be/5bT4NqBQXsU
+
 ---
 
 ## Tools 
