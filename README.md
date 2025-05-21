@@ -5,7 +5,7 @@ This repository contains the final project for CP372: Data Analytics and Busines
 ---
 ## Table of Contents
 - [Member](#member)
-- [Project Overview](#overview)
+- [Overview](#overview)
 - [Tools](#tools)
 - [Data Preparation](#data-preparation)
   - [1. Data Cleaning](#1-data-cleaning)
@@ -80,7 +80,7 @@ data.isnull().sum()
 - Checked and confirmed there were no duplicated rows if It's have We will remove it.
 ```python
 data.duplicated().sum()
-df.drop_duplicates()
+data.drop_duplicates()
 ```
 
 ### 3. Feature Engineering
@@ -99,7 +99,7 @@ df.drop_duplicates()
   data["age_group"] = pd.cut(data["age"], bins=[0, 30, 45, 60, 100],
                          labels=["Young", "Adult", "Senior", "Elderly"])
   ```
-  - If have no contact data change it to unknown
+  - If contact data is missing, mark it as unknown.
   ```python
   # ช่องทางการติดต่อ
   data["contact_known"] = data["contact"].apply(lambda x: x != "unknown")
@@ -113,7 +113,7 @@ df.drop_duplicates()
   data["month_num"] = data["month"].apply(lambda x: month_order.index(x.lower()) + 1 if x.lower() in month_order else None)
   ```
 
-  - deposit flag if deposit = yes = 1 then = 0
+  - Create a deposit flag: assign 1 if `deposit` is 'yes', otherwise assign 0.
   ```python
   #deposit flag
   data["deposit_flag"] = data["deposit"].apply(lambda x: 1 if x == "yes" else 0)
@@ -157,7 +157,7 @@ files.download('Bank_Target_Marketing_Dataset_feature_engineered.csv')
 
 ### 4. Monthly Campaign Deposits
 - This line chart shows the total number of deposits `deposit_flag` over the months.
-  - The highest number of deposits occurs in March and August.
+  - March and August show the highest number of deposits.
 
 <img width="1244" alt="แนวโน้มการตอบรับแคมเปญรายเดือน" src="https://github.com/user-attachments/assets/5aa4bea2-cea8-4296-a0c2-c27fdcc3add3" />
 
@@ -362,7 +362,7 @@ This project analyzed the "Bank Target Marketing" dataset to uncover insights in
 
 2. **Customer Segmentation:**
    - Using KMeans clustering, customers were segmented into four groups based on their behavior and likelihood of responding to campaigns.
-   - Cluster 0 showed the highest response rate (15%) and should be the primary target for future campaigns, while Cluster 2 had the lowest response rate (4.3%) and may require a different strategy.
+   - Cluster 0 had the highest response rate (15%) and should be the primary target for future campaigns, while Cluster 2 had the lowest response rate (4.3%) and may require a different strategy.
 
 3. **Seasonality and Campaign Timing:**
    - Campaigns were most effective in March and May, with a significant drop in response rates during the summer months (June to August).
