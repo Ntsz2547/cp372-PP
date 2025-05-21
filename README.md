@@ -44,6 +44,7 @@ https://colab.research.google.com/drive/1PU7nOFtGB13nbsXPqoprLXMluRMEvWJS?usp=sh
 ## Tools 
 
 - Python (pandas, numpy, matplotlib, seaborn, scikit-learn, etc.)
+- Microsoft Excel
 - Google Colab
 - Tableau Public
 - GitHub
