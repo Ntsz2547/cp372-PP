@@ -345,9 +345,9 @@ plt.show()
 <img width="589" alt="Response Rate by Customer Cluster" src="https://github.com/user-attachments/assets/e3a7156a-ad58-4002-a379-c2d059fa2f83" />
 
 - Cluster Response Rates:
-  - Cluster 0: 15% (highest response rate, primary target group).
+  - Cluster 0: 15% (highest response rate, We will focus this group).
   - Cluster 1: 11.8%.
-  - Cluster 2: 4.3% (lowest response rate, avoid or redesign campaigns for this group).
+  - Cluster 2: 4.3% (lowest response rate, We should avoid this group or redesign campaigns for this group).
   - Cluster 3: 12%.
 
 --- 
