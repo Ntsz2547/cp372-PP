@@ -63,9 +63,8 @@ https://youtu.be/5bT4NqBQXsU
 
 ## Tools 
 
-- Python (pandas, numpy, matplotlib, seaborn, scikit-learn, etc.)
+- Google Colab: Python (pandas, numpy, matplotlib, seaborn, scikit-learn, etc.)
 - Microsoft Excel
-- Google Colab
 - Tableau Public
 - GitHub
 
